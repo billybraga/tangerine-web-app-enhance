@@ -25,6 +25,9 @@ var span = document.createElement("span");
 span.textContent = total + " $";
 span.style.color = "green";
 if (total < 1000) {
+    span.style.color = "#f58426";
+}
+if (total < 0) {
     span.style.color = "red";
 }
 
